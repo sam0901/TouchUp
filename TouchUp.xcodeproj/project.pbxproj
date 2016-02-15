@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8467982F1C6FDF7D00A759EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467982E1C6FDF7D00A759EF /* AppDelegate.swift */; };
-		846798311C6FDF7D00A759EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846798301C6FDF7D00A759EF /* ViewController.swift */; };
 		846798341C6FDF7D00A759EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846798321C6FDF7D00A759EF /* Main.storyboard */; };
 		846798361C6FDF7D00A759EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846798351C6FDF7D00A759EF /* Assets.xcassets */; };
 		846798391C6FDF7D00A759EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846798371C6FDF7D00A759EF /* LaunchScreen.storyboard */; };
 		846798441C6FDF7D00A759EF /* TouchUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846798431C6FDF7D00A759EF /* TouchUpTests.swift */; };
 		8467984F1C6FDF7D00A759EF /* TouchUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467984E1C6FDF7D00A759EF /* TouchUpUITests.swift */; };
+		846A7B2D1C71056700E4C7BF /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A7B2C1C71056700E4C7BF /* RestApiManager.swift */; };
+		846A7B311C714EC000E4C7BF /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A7B301C714EC000E4C7BF /* extensions.swift */; };
+		84D426211C72525B004487C7 /* homepage.json in Resources */ = {isa = PBXBuildFile; fileRef = 84D426201C72525B004487C7 /* homepage.json */; };
+		FA953C784810637C86FB2D5E /* Pods_TouchUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42ED61CDECA41E4C423099D /* Pods_TouchUp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +36,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		846A7B5E1C71525300E4C7BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846A7B5F1C71525300E4C7BF /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		286A333A26A60A36DAADAB34 /* Pods-TouchUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp.release.xcconfig"; sourceTree = "<group>"; };
+		6ADE1ED27F35B53E0F12DD44 /* Pods-TouchUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp.debug.xcconfig"; sourceTree = "<group>"; };
 		8467982B1C6FDF7D00A759EF /* TouchUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467982E1C6FDF7D00A759EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		846798301C6FDF7D00A759EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		846798331C6FDF7D00A759EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		846798351C6FDF7D00A759EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846798381C6FDF7D00A759EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +74,10 @@
 		8467984A1C6FDF7D00A759EF /* TouchUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467984E1C6FDF7D00A759EF /* TouchUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchUpUITests.swift; sourceTree = "<group>"; };
 		846798501C6FDF7D00A759EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846A7B2C1C71056700E4C7BF /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestApiManager.swift; path = ../RestApiManager.swift; sourceTree = "<group>"; };
+		846A7B301C714EC000E4C7BF /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		84D426201C72525B004487C7 /* homepage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homepage.json; sourceTree = "<group>"; };
+		E42ED61CDECA41E4C423099D /* Pods_TouchUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA953C784810637C86FB2D5E /* Pods_TouchUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B6A1F4AB6380DDA3C66C0DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E42ED61CDECA41E4C423099D /* Pods_TouchUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		846798221C6FDF7D00A759EF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				846798421C6FDF7D00A759EF /* TouchUpTests */,
 				8467984D1C6FDF7D00A759EF /* TouchUpUITests */,
 				8467982C1C6FDF7D00A759EF /* Products */,
+				8A9B134722615D9C5E6162A6 /* Pods */,
+				7B6A1F4AB6380DDA3C66C0DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +139,14 @@
 		8467982D1C6FDF7D00A759EF /* TouchUp */ = {
 			isa = PBXGroup;
 			children = (
+				846A7B2C1C71056700E4C7BF /* RestApiManager.swift */,
 				8467982E1C6FDF7D00A759EF /* AppDelegate.swift */,
-				846798301C6FDF7D00A759EF /* ViewController.swift */,
 				846798321C6FDF7D00A759EF /* Main.storyboard */,
 				846798351C6FDF7D00A759EF /* Assets.xcassets */,
 				846798371C6FDF7D00A759EF /* LaunchScreen.storyboard */,
 				8467983A1C6FDF7D00A759EF /* Info.plist */,
+				846A7B301C714EC000E4C7BF /* extensions.swift */,
+				84D426201C72525B004487C7 /* homepage.json */,
 			);
 			path = TouchUp;
 			sourceTree = "<group>";
@@ -125,6 +169,15 @@
 			path = TouchUpUITests;
 			sourceTree = "<group>";
 		};
+		8A9B134722615D9C5E6162A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6ADE1ED27F35B53E0F12DD44 /* Pods-TouchUp.debug.xcconfig */,
+				286A333A26A60A36DAADAB34 /* Pods-TouchUp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +185,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 846798531C6FDF7D00A759EF /* Build configuration list for PBXNativeTarget "TouchUp" */;
 			buildPhases = (
+				D46B4120BCD049D96806CAD0 /* Check Pods Manifest.lock */,
 				846798271C6FDF7D00A759EF /* Sources */,
 				846798281C6FDF7D00A759EF /* Frameworks */,
 				846798291C6FDF7D00A759EF /* Resources */,
+				846A7B5E1C71525300E4C7BF /* Embed Frameworks */,
+				846A7B5F1C71525300E4C7BF /* Embed PlugIns */,
+				3E06551656FB69CC950528D1 /* Embed Pods Frameworks */,
+				8355D9E151A9E610DB9B04E3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +290,7 @@
 				846798391C6FDF7D00A759EF /* LaunchScreen.storyboard in Resources */,
 				846798361C6FDF7D00A759EF /* Assets.xcassets in Resources */,
 				846798341C6FDF7D00A759EF /* Main.storyboard in Resources */,
+				84D426211C72525B004487C7 /* homepage.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +310,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E06551656FB69CC950528D1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8355D9E151A9E610DB9B04E3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D46B4120BCD049D96806CAD0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		846798271C6FDF7D00A759EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846798311C6FDF7D00A759EF /* ViewController.swift in Sources */,
+				846A7B2D1C71056700E4C7BF /* RestApiManager.swift in Sources */,
 				8467982F1C6FDF7D00A759EF /* AppDelegate.swift in Sources */,
+				846A7B311C714EC000E4C7BF /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -387,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -397,9 +505,12 @@
 		};
 		846798541C6FDF7D00A759EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ADE1ED27F35B53E0F12DD44 /* Pods-TouchUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TouchUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samba.TouchUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,10 +519,14 @@
 		};
 		846798551C6FDF7D00A759EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286A333A26A60A36DAADAB34 /* Pods-TouchUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TouchUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.samba.TouchUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -484,6 +599,7 @@
 				846798551C6FDF7D00A759EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		846798561C6FDF7D00A759EF /* Build configuration list for PBXNativeTarget "TouchUpTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +608,7 @@
 				846798581C6FDF7D00A759EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		846798591C6FDF7D00A759EF /* Build configuration list for PBXNativeTarget "TouchUpUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +617,7 @@
 				8467985B1C6FDF7D00A759EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
