@@ -1,0 +1,8 @@
+{
+    "artists" : [{
+                 "artistId" : "0",
+                 "artistName"         : "Name1",
+                 "artistImageName"    : "image3.png",
+                 "artistShortBio"     : "ExampleShortBio"
+                 }]
+}

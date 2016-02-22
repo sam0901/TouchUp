@@ -6,6 +6,7 @@ use_frameworks!
 target 'TouchUp' do
     pod 'Alamofire'
     pod 'SwiftyJSON'
+    pod 'SnapKit'
 end
 
 target 'TouchUpTests' do

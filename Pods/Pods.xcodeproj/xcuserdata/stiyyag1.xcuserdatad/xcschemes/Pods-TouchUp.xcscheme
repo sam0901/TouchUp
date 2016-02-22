@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D8EECBE75967238DBD4792EC'
+               BlueprintIdentifier = 'A1D158CDA80E29DC2A66152D'
                BlueprintName = 'Pods-TouchUp'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_TouchUp.framework'>

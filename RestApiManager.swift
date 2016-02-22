@@ -10,21 +10,23 @@ import Foundation
 import SwiftyJSON
 import Alamofire
 
-typealias ServiceResponse = (JSON, NSError?) -> Void
 
-class RestApiManager : NSObject {
-    typealias ServicesResponse = (JSON, NSError?) -> Void
+class RestApiManager {
     
-    let baseURl = ""
+    var baseURl : String?
+
+    init(baseURL : String) {
+        self.baseURl = baseURL
+    }
     
-    func getRequest(params : NSDictionary)  {
+    func getRequest(params: NSDictionary)  {
         
         let headers = [
             "Authorization" : "",
             "Content-Type"  : ""
         ]
         
-        Alamofire.request(.GET, baseURl, headers : headers, parameters: params as? [String : AnyObject]).response { request, response, data, error in
+        Alamofire.request(.GET, baseURl!, headers : headers, parameters: params as? [String : AnyObject]).response { request, response, data, error in
             // return the data in JSON
         }
     }
@@ -37,13 +39,13 @@ class RestApiManager : NSObject {
             "Content-Type"  : ""
         ]
         
-        Alamofire.request(.POST, baseURl, headers : headers, parameters : params as? [String : AnyObject], encoding: .JSON).response { request, response, data, error in
+        Alamofire.request(.POST, baseURl!, headers : headers, parameters : params as? [String : AnyObject], encoding: .JSON).response { request, response, data, error in
             // return the data in JSON
         }
     }
     
     func uploadImage(fileURL: NSURL?) {
-        Alamofire.upload(.POST, baseURl, file: fileURL!).progress { bytesWritten, totalBytesWritten, totalBytesExpectedToWrite in
+        Alamofire.upload(.POST, baseURl!, file: fileURL!).progress { bytesWritten, totalBytesWritten, totalBytesExpectedToWrite in
             print(totalBytesWritten)
             
             dispatch_async(dispatch_get_main_queue()) {
@@ -103,10 +105,7 @@ class RestApiManager : NSObject {
 
 
 
-
-
-
-
+//    typealias ServiceResponse = (JSON, NSError?) -> Void
 
 //    func makeHTTPGetRequest(path: String, onCompletion: ServiceResponse) {
 //        let request = NSMutableURLRequest(URL: NSURL(string: path)!)
