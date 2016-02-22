@@ -14,6 +14,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-TouchUpTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TouchUpUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6CFD0CA13DF15AB4337A7D8C2E4B592B</key>
+		<key>60A93870526D2959DCCB65E86B3810FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6CC7D819D71FAE8ED95FFC6683E31807</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FFF2B417CBC07C9E2DA1708A7D2E9404</key>
+		<key>97537BF72F4EC684FB33F254A97442C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC44C9EE50351DF3F8FF80D1DD264114</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D62A2F0E6711C0EB46DB645B20AB9AA5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,3 +1,14 @@
 {
-    "page" : "homepage"
+    "page"     : "homepage",
+    "widgets"  :   [{
+                    "id"    :   "1",
+                    "type"  :   "Type1",
+                    "image" :   "image1.jpg",
+                    "title" :   "Type1_Title"
+                    }, {
+                    "id"    :   "2",
+                    "type"  :   "Type2",
+                    "image" :   "image2.jpg",
+                    "title" :   "Type2_Title"
+                    }]
 }

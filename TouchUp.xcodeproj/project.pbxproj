@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DE782D496D685770B809AA9 /* Pods_TouchUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F085DF9096598A147C50460 /* Pods_TouchUpTests.framework */; };
 		8467982F1C6FDF7D00A759EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467982E1C6FDF7D00A759EF /* AppDelegate.swift */; };
 		846798341C6FDF7D00A759EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846798321C6FDF7D00A759EF /* Main.storyboard */; };
 		846798361C6FDF7D00A759EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846798351C6FDF7D00A759EF /* Assets.xcassets */; };
@@ -15,7 +16,20 @@
 		8467984F1C6FDF7D00A759EF /* TouchUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467984E1C6FDF7D00A759EF /* TouchUpUITests.swift */; };
 		846A7B2D1C71056700E4C7BF /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A7B2C1C71056700E4C7BF /* RestApiManager.swift */; };
 		846A7B311C714EC000E4C7BF /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A7B301C714EC000E4C7BF /* extensions.swift */; };
+		84C940CA1C76D589005F0F73 /* HomeCategoryWidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C940C91C76D589005F0F73 /* HomeCategoryWidgetModel.swift */; };
+		84C940CF1C777962005F0F73 /* homePageBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C940CE1C777962005F0F73 /* homePageBroker.swift */; };
+		84C940D41C7958B5005F0F73 /* HomePageCategoryWidgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C940D31C7958B5005F0F73 /* HomePageCategoryWidgetCell.swift */; };
+		84C940D61C7968E1005F0F73 /* HomeCategoryWidgetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C940D51C7968E1005F0F73 /* HomeCategoryWidgetCollectionViewController.swift */; };
+		84C940E41C7A4031005F0F73 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C940E11C7A4031005F0F73 /* image3.jpg */; };
+		84C940E51C7A4031005F0F73 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C940E21C7A4031005F0F73 /* image2.jpg */; };
+		84C940E61C7A4031005F0F73 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84C940E31C7A4031005F0F73 /* image1.jpg */; };
+		84C940E91C7A5348005F0F73 /* AtristSERPBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C940E81C7A5348005F0F73 /* AtristSERPBroker.swift */; };
+		84C940EB1C7A5367005F0F73 /* sampleArtistSERP.json in Resources */ = {isa = PBXBuildFile; fileRef = 84C940EA1C7A5367005F0F73 /* sampleArtistSERP.json */; };
+		84C940ED1C7A537C005F0F73 /* ArtistSERPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C940EC1C7A537C005F0F73 /* ArtistSERPModel.swift */; };
+		84C940F11C7A7194005F0F73 /* ArtistSERPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C940F01C7A7194005F0F73 /* ArtistSERPTableViewController.swift */; };
+		84C940F31C7AAC69005F0F73 /* ArtistSERPTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C940F21C7AAC69005F0F73 /* ArtistSERPTableViewCell.swift */; };
 		84D426211C72525B004487C7 /* homepage.json in Resources */ = {isa = PBXBuildFile; fileRef = 84D426201C72525B004487C7 /* homepage.json */; };
+		D00DED237105775168C817F4 /* Pods_TouchUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8A7DA62B6FEEA9DBA57AFD /* Pods_TouchUpUITests.framework */; };
 		FA953C784810637C86FB2D5E /* Pods_TouchUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42ED61CDECA41E4C423099D /* Pods_TouchUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +74,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C0853EDD652111977B723CD /* Pods-TouchUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUpTests/Pods-TouchUpTests.release.xcconfig"; sourceTree = "<group>"; };
 		286A333A26A60A36DAADAB34 /* Pods-TouchUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp.release.xcconfig"; sourceTree = "<group>"; };
 		6ADE1ED27F35B53E0F12DD44 /* Pods-TouchUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp.debug.xcconfig"; sourceTree = "<group>"; };
+		7501DF9DCF597A332F47B5E5 /* Pods-TouchUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUpTests/Pods-TouchUpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8467982B1C6FDF7D00A759EF /* TouchUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467982E1C6FDF7D00A759EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846798331C6FDF7D00A759EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,8 +92,25 @@
 		846798501C6FDF7D00A759EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846A7B2C1C71056700E4C7BF /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestApiManager.swift; path = ../RestApiManager.swift; sourceTree = "<group>"; };
 		846A7B301C714EC000E4C7BF /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		84C940C91C76D589005F0F73 /* HomeCategoryWidgetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCategoryWidgetModel.swift; sourceTree = "<group>"; };
+		84C940CB1C776DE0005F0F73 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		84C940CE1C777962005F0F73 /* homePageBroker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homePageBroker.swift; sourceTree = "<group>"; };
+		84C940D31C7958B5005F0F73 /* HomePageCategoryWidgetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageCategoryWidgetCell.swift; sourceTree = "<group>"; };
+		84C940D51C7968E1005F0F73 /* HomeCategoryWidgetCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCategoryWidgetCollectionViewController.swift; sourceTree = "<group>"; };
+		84C940E11C7A4031005F0F73 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		84C940E21C7A4031005F0F73 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		84C940E31C7A4031005F0F73 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		84C940E81C7A5348005F0F73 /* AtristSERPBroker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtristSERPBroker.swift; sourceTree = "<group>"; };
+		84C940EA1C7A5367005F0F73 /* sampleArtistSERP.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleArtistSERP.json; sourceTree = "<group>"; };
+		84C940EC1C7A537C005F0F73 /* ArtistSERPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistSERPModel.swift; sourceTree = "<group>"; };
+		84C940F01C7A7194005F0F73 /* ArtistSERPTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistSERPTableViewController.swift; sourceTree = "<group>"; };
+		84C940F21C7AAC69005F0F73 /* ArtistSERPTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistSERPTableViewCell.swift; sourceTree = "<group>"; };
 		84D426201C72525B004487C7 /* homepage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homepage.json; sourceTree = "<group>"; };
+		8E9AA37812C231C3946E794B /* Pods-TouchUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUpUITests/Pods-TouchUpUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F085DF9096598A147C50460 /* Pods_TouchUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7867E5E3AA638E7ED07CE4F /* Pods-TouchUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUpUITests/Pods-TouchUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E42ED61CDECA41E4C423099D /* Pods_TouchUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8A7DA62B6FEEA9DBA57AFD /* Pods_TouchUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE782D496D685770B809AA9 /* Pods_TouchUpTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00DED237105775168C817F4 /* Pods_TouchUpUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				E42ED61CDECA41E4C423099D /* Pods_TouchUp.framework */,
+				8F085DF9096598A147C50460 /* Pods_TouchUpTests.framework */,
+				EE8A7DA62B6FEEA9DBA57AFD /* Pods_TouchUpUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +154,7 @@
 		846798221C6FDF7D00A759EF = {
 			isa = PBXGroup;
 			children = (
+				84C940CB1C776DE0005F0F73 /* MyPlayground.playground */,
 				8467982D1C6FDF7D00A759EF /* TouchUp */,
 				846798421C6FDF7D00A759EF /* TouchUpTests */,
 				8467984D1C6FDF7D00A759EF /* TouchUpUITests */,
@@ -139,14 +177,13 @@
 		8467982D1C6FDF7D00A759EF /* TouchUp */ = {
 			isa = PBXGroup;
 			children = (
+				84C940E71C7A4EF9005F0F73 /* ArtistSERP */,
+				84C940DA1C7A3A5C005F0F73 /* Resources */,
 				846A7B2C1C71056700E4C7BF /* RestApiManager.swift */,
 				8467982E1C6FDF7D00A759EF /* AppDelegate.swift */,
-				846798321C6FDF7D00A759EF /* Main.storyboard */,
-				846798351C6FDF7D00A759EF /* Assets.xcassets */,
-				846798371C6FDF7D00A759EF /* LaunchScreen.storyboard */,
 				8467983A1C6FDF7D00A759EF /* Info.plist */,
 				846A7B301C714EC000E4C7BF /* extensions.swift */,
-				84D426201C72525B004487C7 /* homepage.json */,
+				84C940D91C798CDC005F0F73 /* HomePage */,
 			);
 			path = TouchUp;
 			sourceTree = "<group>";
@@ -169,11 +206,52 @@
 			path = TouchUpUITests;
 			sourceTree = "<group>";
 		};
+		84C940D91C798CDC005F0F73 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				84D426201C72525B004487C7 /* homepage.json */,
+				84C940CE1C777962005F0F73 /* homePageBroker.swift */,
+				84C940C91C76D589005F0F73 /* HomeCategoryWidgetModel.swift */,
+				84C940D31C7958B5005F0F73 /* HomePageCategoryWidgetCell.swift */,
+				84C940D51C7968E1005F0F73 /* HomeCategoryWidgetCollectionViewController.swift */,
+			);
+			name = HomePage;
+			sourceTree = "<group>";
+		};
+		84C940DA1C7A3A5C005F0F73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84C940E11C7A4031005F0F73 /* image3.jpg */,
+				84C940E21C7A4031005F0F73 /* image2.jpg */,
+				84C940E31C7A4031005F0F73 /* image1.jpg */,
+				846798351C6FDF7D00A759EF /* Assets.xcassets */,
+				846798321C6FDF7D00A759EF /* Main.storyboard */,
+				846798371C6FDF7D00A759EF /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		84C940E71C7A4EF9005F0F73 /* ArtistSERP */ = {
+			isa = PBXGroup;
+			children = (
+				84C940E81C7A5348005F0F73 /* AtristSERPBroker.swift */,
+				84C940EA1C7A5367005F0F73 /* sampleArtistSERP.json */,
+				84C940EC1C7A537C005F0F73 /* ArtistSERPModel.swift */,
+				84C940F01C7A7194005F0F73 /* ArtistSERPTableViewController.swift */,
+				84C940F21C7AAC69005F0F73 /* ArtistSERPTableViewCell.swift */,
+			);
+			name = ArtistSERP;
+			sourceTree = "<group>";
+		};
 		8A9B134722615D9C5E6162A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				6ADE1ED27F35B53E0F12DD44 /* Pods-TouchUp.debug.xcconfig */,
 				286A333A26A60A36DAADAB34 /* Pods-TouchUp.release.xcconfig */,
+				7501DF9DCF597A332F47B5E5 /* Pods-TouchUpTests.debug.xcconfig */,
+				0C0853EDD652111977B723CD /* Pods-TouchUpTests.release.xcconfig */,
+				D7867E5E3AA638E7ED07CE4F /* Pods-TouchUpUITests.debug.xcconfig */,
+				8E9AA37812C231C3946E794B /* Pods-TouchUpUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -207,9 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 846798561C6FDF7D00A759EF /* Build configuration list for PBXNativeTarget "TouchUpTests" */;
 			buildPhases = (
+				525C4BBA9ED17643563CF489 /* Check Pods Manifest.lock */,
 				8467983B1C6FDF7D00A759EF /* Sources */,
 				8467983C1C6FDF7D00A759EF /* Frameworks */,
 				8467983D1C6FDF7D00A759EF /* Resources */,
+				FE979932BE564665B19B6A0F /* Embed Pods Frameworks */,
+				18CD07DE04625885B93687C5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 846798591C6FDF7D00A759EF /* Build configuration list for PBXNativeTarget "TouchUpUITests" */;
 			buildPhases = (
+				206690CC051FC03622389E67 /* Check Pods Manifest.lock */,
 				846798461C6FDF7D00A759EF /* Sources */,
 				846798471C6FDF7D00A759EF /* Frameworks */,
 				846798481C6FDF7D00A759EF /* Resources */,
+				2FE17FED5B2CCD1B5EE1B777 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,9 +370,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C940EB1C7A5367005F0F73 /* sampleArtistSERP.json in Resources */,
+				84C940E61C7A4031005F0F73 /* image1.jpg in Resources */,
 				846798391C6FDF7D00A759EF /* LaunchScreen.storyboard in Resources */,
+				84C940E41C7A4031005F0F73 /* image3.jpg in Resources */,
 				846798361C6FDF7D00A759EF /* Assets.xcassets in Resources */,
 				846798341C6FDF7D00A759EF /* Main.storyboard in Resources */,
+				84C940E51C7A4031005F0F73 /* image2.jpg in Resources */,
 				84D426211C72525B004487C7 /* homepage.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +398,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18CD07DE04625885B93687C5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchUpTests/Pods-TouchUpTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		206690CC051FC03622389E67 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2FE17FED5B2CCD1B5EE1B777 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchUpUITests/Pods-TouchUpUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3E06551656FB69CC950528D1 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +456,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		525C4BBA9ED17643563CF489 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8355D9E151A9E610DB9B04E3 /* Copy Pods Resources */ = {
@@ -356,6 +503,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		FE979932BE564665B19B6A0F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchUpTests/Pods-TouchUpTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -363,9 +525,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C940CF1C777962005F0F73 /* homePageBroker.swift in Sources */,
 				846A7B2D1C71056700E4C7BF /* RestApiManager.swift in Sources */,
+				84C940D61C7968E1005F0F73 /* HomeCategoryWidgetCollectionViewController.swift in Sources */,
 				8467982F1C6FDF7D00A759EF /* AppDelegate.swift in Sources */,
+				84C940F11C7A7194005F0F73 /* ArtistSERPTableViewController.swift in Sources */,
+				84C940CA1C76D589005F0F73 /* HomeCategoryWidgetModel.swift in Sources */,
+				84C940F31C7AAC69005F0F73 /* ArtistSERPTableViewCell.swift in Sources */,
+				84C940D41C7958B5005F0F73 /* HomePageCategoryWidgetCell.swift in Sources */,
 				846A7B311C714EC000E4C7BF /* extensions.swift in Sources */,
+				84C940ED1C7A537C005F0F73 /* ArtistSERPModel.swift in Sources */,
+				84C940E91C7A5348005F0F73 /* AtristSERPBroker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +678,7 @@
 			baseConfigurationReference = 6ADE1ED27F35B53E0F12DD44 /* Pods-TouchUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = TouchUp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,7 +692,7 @@
 			baseConfigurationReference = 286A333A26A60A36DAADAB34 /* Pods-TouchUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = TouchUp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -534,6 +704,7 @@
 		};
 		846798571C6FDF7D00A759EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7501DF9DCF597A332F47B5E5 /* Pods-TouchUpTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TouchUpTests/Info.plist;
@@ -546,6 +717,7 @@
 		};
 		846798581C6FDF7D00A759EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C0853EDD652111977B723CD /* Pods-TouchUpTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TouchUpTests/Info.plist;
@@ -558,6 +730,7 @@
 		};
 		8467985A1C6FDF7D00A759EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7867E5E3AA638E7ED07CE4F /* Pods-TouchUpUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TouchUpUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -570,6 +743,7 @@
 		};
 		8467985B1C6FDF7D00A759EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9AA37812C231C3946E794B /* Pods-TouchUpUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TouchUpUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
