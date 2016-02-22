@@ -34,11 +34,7 @@ extension HomeCategoryWidgetCollectionViewController : UICollectionViewDelegateF
         cell.categoryCellLabel.textColor = UIColor.whiteColor()
         cell.categoryCellLabel.textAlignment = NSTextAlignment.Justified
         cell.categoryImageView.image = UIImage(named: widgets[indexPath.row].imageName!)
-        let rect = cell.bounds
-        let view = UIView.init(frame: rect)
-        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.25)
-        cell.addSubview(view)
-        collectionView.bringSubviewToFront(cell.categoryCellLabel)
+        cell.categoryBlurView.alpha = 0.20
         return cell
     }
     

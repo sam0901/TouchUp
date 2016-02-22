@@ -12,6 +12,7 @@ class HomePageCategoryWidgetCell: UICollectionViewCell {
     
     @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var categoryCellLabel: UILabel!
+    @IBOutlet weak var categoryBlurView: UIVisualEffectView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
