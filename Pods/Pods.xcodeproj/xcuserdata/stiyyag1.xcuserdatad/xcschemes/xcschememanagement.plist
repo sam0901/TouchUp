@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PubNub.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,6 +42,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0FF9E008282669F97FF7EE4C3C7C6643</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>60A93870526D2959DCCB65E86B3810FA</key>
 		<dict>
 			<key>primary</key>
@@ -52,17 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>97537BF72F4EC684FB33F254A97442C8</key>
+		<key>931DD56C0D195A0A21FF7DB6BF40DFA6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC44C9EE50351DF3F8FF80D1DD264114</key>
+		<key>AF9CF1E3208CD8722E5DFB8C7E3542D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D62A2F0E6711C0EB46DB645B20AB9AA5</key>
+		<key>CD1FC0A23C929014629641EEBB97A6C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

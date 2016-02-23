@@ -13,6 +13,7 @@ class ArtistSERPTableViewCell: UITableViewCell {
     @IBOutlet weak var artistSERPCellImageView: UIImageView!
     @IBOutlet weak var artistCellNameLabel: UILabel!
     @IBOutlet weak var artistCellShortBioLabel: UILabel!
+    @IBOutlet weak var artistCellDistanceLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

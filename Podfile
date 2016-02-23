@@ -7,6 +7,7 @@ target 'TouchUp' do
     pod 'Alamofire'
     pod 'SwiftyJSON'
     pod 'SnapKit'
+    pod 'PubNub', '3.7.2'
 end
 
 target 'TouchUpTests' do

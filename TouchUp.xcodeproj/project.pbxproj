@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DE782D496D685770B809AA9 /* Pods_TouchUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F085DF9096598A147C50460 /* Pods_TouchUpTests.framework */; };
+		841EB2D61C7BFEB3001E572A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841EB2D51C7BFEB3001E572A /* LocationManager.swift */; };
 		8467982F1C6FDF7D00A759EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467982E1C6FDF7D00A759EF /* AppDelegate.swift */; };
 		846798341C6FDF7D00A759EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846798321C6FDF7D00A759EF /* Main.storyboard */; };
 		846798361C6FDF7D00A759EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846798351C6FDF7D00A759EF /* Assets.xcassets */; };
@@ -78,6 +79,8 @@
 		286A333A26A60A36DAADAB34 /* Pods-TouchUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp.release.xcconfig"; sourceTree = "<group>"; };
 		6ADE1ED27F35B53E0F12DD44 /* Pods-TouchUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp.debug.xcconfig"; sourceTree = "<group>"; };
 		7501DF9DCF597A332F47B5E5 /* Pods-TouchUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUpTests/Pods-TouchUpTests.debug.xcconfig"; sourceTree = "<group>"; };
+		841EB2D21C7BB903001E572A /* TouchUp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchUp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		841EB2D51C7BFEB3001E572A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		8467982B1C6FDF7D00A759EF /* TouchUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467982E1C6FDF7D00A759EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846798331C6FDF7D00A759EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,6 +154,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		841EB2D41C7BFE89001E572A /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				841EB2D51C7BFEB3001E572A /* LocationManager.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
 		846798221C6FDF7D00A759EF = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +188,8 @@
 		8467982D1C6FDF7D00A759EF /* TouchUp */ = {
 			isa = PBXGroup;
 			children = (
+				841EB2D41C7BFE89001E572A /* Location */,
+				841EB2D21C7BB903001E572A /* TouchUp-Bridging-Header.h */,
 				84C940E71C7A4EF9005F0F73 /* ArtistSERP */,
 				84C940DA1C7A3A5C005F0F73 /* Resources */,
 				846A7B2C1C71056700E4C7BF /* RestApiManager.swift */,
@@ -533,6 +546,7 @@
 				84C940CA1C76D589005F0F73 /* HomeCategoryWidgetModel.swift in Sources */,
 				84C940F31C7AAC69005F0F73 /* ArtistSERPTableViewCell.swift in Sources */,
 				84C940D41C7958B5005F0F73 /* HomePageCategoryWidgetCell.swift in Sources */,
+				841EB2D61C7BFEB3001E572A /* LocationManager.swift in Sources */,
 				846A7B311C714EC000E4C7BF /* extensions.swift in Sources */,
 				84C940ED1C7A537C005F0F73 /* ArtistSERPModel.swift in Sources */,
 				84C940E91C7A5348005F0F73 /* AtristSERPBroker.swift in Sources */,
@@ -684,6 +698,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samba.TouchUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchUp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -699,6 +714,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.samba.TouchUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchUp-Bridging-Header.h";
 			};
 			name = Release;
 		};

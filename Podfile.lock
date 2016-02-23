@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (3.2.0)
+  - PubNub (3.7.2)
   - SnapKit (0.19.1)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire
+  - PubNub (= 3.7.2)
   - SnapKit
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  PubNub: 726606d76b75312fe79e393f79f0c16338a4a651
   SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 

@@ -14,11 +14,15 @@ class ArtistSERPModel {
     let artistName : String?
     let artistShortBio : String?
     let artistImageName : String?
+    let latitude : String?
+    let longitude : String?
     
-    init(artistId: String?, artistName: String?, artistShortBio: String?, artistImageName: String?) {
+    init(artistId: String?, artistName: String?, artistShortBio: String?, artistImageName: String?, latitude: String?, longitude: String?) {
         self.artistId = artistId
         self.artistName = artistName
         self.artistShortBio = artistShortBio
         self.artistImageName = artistImageName
+        self.longitude = longitude
+        self.latitude = latitude
     }
 }
