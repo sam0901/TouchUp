@@ -8,17 +8,11 @@
 
 import UIKit
 
-let themeColor = UIColor(red: 0.01, green: 0.0, blue: 0.80, alpha: 0.10)
-let themeColorWithAlpha = UIColor(red: 0.01, green: 0.0, blue: 0.80, alpha: 0.80)
-var locationBroker: LocationManager?
-
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        locationBroker = LocationManager.init()
         return true
     }
 
@@ -43,8 +37,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
-
-
 }
 

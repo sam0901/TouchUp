@@ -85,12 +85,14 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TouchUp/Alamofire.framework"
+  install_framework "Pods-TouchUp/CocoaLumberjack.framework"
   install_framework "Pods-TouchUp/PubNub.framework"
   install_framework "Pods-TouchUp/SnapKit.framework"
   install_framework "Pods-TouchUp/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TouchUp/Alamofire.framework"
+  install_framework "Pods-TouchUp/CocoaLumberjack.framework"
   install_framework "Pods-TouchUp/PubNub.framework"
   install_framework "Pods-TouchUp/SnapKit.framework"
   install_framework "Pods-TouchUp/SwiftyJSON.framework"

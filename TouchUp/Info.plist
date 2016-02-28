@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This application needs access to your location information</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>This application needs access to your location information</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -24,8 +20,39 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>9ef59d02df836fb3faeba1fd26109d846ef46a72</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>publish-key</key>
+					<string>pub-c-5bcd9772-572d-48ee-bdc9-8e22179e3357</string>
+					<key>secret-key</key>
+					<string>sec-c-YzdhYWZkOTMtMDIyZC00MmE5LTkxYjgtY2FhMDY2YTI3NmMz</string>
+					<key>subscribe-key</key>
+					<string>sub-c-9442c2f4-de56-11e5-9afa-0619f8945a4f</string>
+				</dict>
+				<key>KitName</key>
+				<string>PubNub</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This application needs access to your location information</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This application needs access to your location information</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

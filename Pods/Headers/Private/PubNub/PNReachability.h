@@ -1,1 +1,1 @@
-../../../PubNub/iOS/iPadDemoApp/pubnub/libs/PubNub/Network/PNReachability.h
+../../../PubNub/PubNub/Network/PNReachability.h

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0DE782D496D685770B809AA9 /* Pods_TouchUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F085DF9096598A147C50460 /* Pods_TouchUpTests.framework */; };
 		841EB2D61C7BFEB3001E572A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841EB2D51C7BFEB3001E572A /* LocationManager.swift */; };
+		8423AB911C83754E00CF60A5 /* TUAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423AB901C83754E00CF60A5 /* TUAppDelegate.swift */; };
 		8467982F1C6FDF7D00A759EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467982E1C6FDF7D00A759EF /* AppDelegate.swift */; };
 		846798341C6FDF7D00A759EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846798321C6FDF7D00A759EF /* Main.storyboard */; };
 		846798361C6FDF7D00A759EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846798351C6FDF7D00A759EF /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		7501DF9DCF597A332F47B5E5 /* Pods-TouchUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchUpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchUpTests/Pods-TouchUpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		841EB2D21C7BB903001E572A /* TouchUp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchUp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		841EB2D51C7BFEB3001E572A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8423AB901C83754E00CF60A5 /* TUAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUAppDelegate.swift; sourceTree = "<group>"; };
 		8467982B1C6FDF7D00A759EF /* TouchUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467982E1C6FDF7D00A759EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846798331C6FDF7D00A759EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				84C940DA1C7A3A5C005F0F73 /* Resources */,
 				846A7B2C1C71056700E4C7BF /* RestApiManager.swift */,
 				8467982E1C6FDF7D00A759EF /* AppDelegate.swift */,
+				8423AB901C83754E00CF60A5 /* TUAppDelegate.swift */,
 				8467983A1C6FDF7D00A759EF /* Info.plist */,
 				846A7B301C714EC000E4C7BF /* extensions.swift */,
 				84C940D91C798CDC005F0F73 /* HomePage */,
@@ -284,6 +287,7 @@
 				846A7B5F1C71525300E4C7BF /* Embed PlugIns */,
 				3E06551656FB69CC950528D1 /* Embed Pods Frameworks */,
 				8355D9E151A9E610DB9B04E3 /* Copy Pods Resources */,
+				84741B541C8388380087EC95 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -501,6 +505,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		84741B541C8388380087EC95 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 9ef59d02df836fb3faeba1fd26109d846ef46a72 5ecde9855382c8434b45a1a12e790501b2d95d5e8c6137a1128a11a2b0046400";
+		};
 		D46B4120BCD049D96806CAD0 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -538,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8423AB911C83754E00CF60A5 /* TUAppDelegate.swift in Sources */,
 				84C940CF1C777962005F0F73 /* homePageBroker.swift in Sources */,
 				846A7B2D1C71056700E4C7BF /* RestApiManager.swift in Sources */,
 				84C940D61C7968E1005F0F73 /* HomeCategoryWidgetCollectionViewController.swift in Sources */,

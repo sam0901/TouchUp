@@ -10,7 +10,6 @@ import Foundation
 import SwiftyJSON
 import Alamofire
 
-
 class RestApiManager {
     
     var baseURl : String?

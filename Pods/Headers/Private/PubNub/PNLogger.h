@@ -1,1 +1,1 @@
-../../../PubNub/iOS/iPadDemoApp/pubnub/libs/PubNub/Misc/PNLogger.h
+../../../PubNub/PubNub/Misc/Logger/PNLogger.h

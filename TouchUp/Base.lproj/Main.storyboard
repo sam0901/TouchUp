@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jda-z5-VQx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kna-Y8-9F1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -66,7 +66,7 @@
                                     <outlet property="categoryBlurView" destination="sjY-lb-16t" id="Bir-y6-Lqb"/>
                                     <outlet property="categoryCellLabel" destination="bMb-Dt-ucQ" id="pUz-IA-c70"/>
                                     <outlet property="categoryImageView" destination="EXc-MJ-V7T" id="LBF-eY-ASv"/>
-                                    <segue destination="WfY-Qe-Ebd" kind="show" id="mGF-Yh-HJE"/>
+                                    <segue destination="WfY-Qe-Ebd" kind="show" identifier="artistSERPSegue" id="mGF-Yh-HJE"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -80,7 +80,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qk-mN-plX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1912" y="203"/>
+            <point key="canvasLocation" x="1898" y="330"/>
         </scene>
         <!--Artist SERP-->
         <scene sceneID="grk-XX-18k">
@@ -126,6 +126,7 @@
                                     <outlet property="artistCellNameLabel" destination="4k1-cq-55n" id="77o-Sb-xPq"/>
                                     <outlet property="artistCellShortBioLabel" destination="X5E-Lf-vi9" id="nDv-k9-2Sm"/>
                                     <outlet property="artistSERPCellImageView" destination="wmA-Ne-Jr4" id="fpQ-0n-86T"/>
+                                    <segue destination="LB4-JC-fe5" kind="show" identifier="artistDetailSegue" id="mWV-1U-OmL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -139,12 +140,41 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZ2-R9-Zwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2382" y="203"/>
+            <point key="canvasLocation" x="2379" y="330"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="fN2-8Q-8kQ">
+            <objects>
+                <tableViewController id="LB4-JC-fe5" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pAt-U7-3CD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="XrY-Ga-Gbe">
+                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XrY-Ga-Gbe" id="gBg-0Y-A2n">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LB4-JC-fe5" id="7Ye-3g-8wz"/>
+                            <outlet property="delegate" destination="LB4-JC-fe5" id="V2o-sJ-UU6"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LyR-74-tZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2849" y="330"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ggc-dj-clE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jda-z5-VQx" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="rootNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="jda-z5-VQx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8vl-de-j2O">
@@ -153,12 +183,50 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Zuf-0b-6Bq" kind="relationship" relationship="rootViewController" id="bGa-TJ-juT"/>
+                        <segue destination="Zuf-0b-6Bq" kind="relationship" relationship="rootViewController" id="cwZ-Lp-s6W"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjw-Th-ANi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1370" y="203"/>
+            <point key="canvasLocation" x="1359" y="330"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ziU-XR-HcE">
+            <objects>
+                <viewController storyboardIdentifier="UserOrArtist" id="kna-Y8-9F1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lpp-br-Sjq"/>
+                        <viewControllerLayoutGuide type="bottom" id="XiE-oW-Rfj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UWg-m8-2cF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCZ-vL-EEj">
+                                <rect key="frame" x="188" y="384" width="38" height="30"/>
+                                <state key="normal" title="Artist"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Continue as" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6E-X6-oDT">
+                                <rect key="frame" x="162" y="204" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3k-r0-aXs">
+                                <rect key="frame" x="188" y="322" width="33" height="30"/>
+                                <state key="normal" title="User"/>
+                                <connections>
+                                    <segue destination="jda-z5-VQx" kind="showDetail" animates="NO" action="showViewController:sender:" id="8bO-Pd-1rn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2z-tk-Q05" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="330"/>
         </scene>
     </scenes>
 </document>
