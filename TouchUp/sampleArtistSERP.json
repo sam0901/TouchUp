@@ -4,7 +4,9 @@
                  "artistName"         : "Name1",
                  "artistImageName"    : "image3.png",
                  "artistShortBio"     : "ExampleShortBio",
-                 "latitude"           : "45.498726",
-                 "longitude"          : "-73.574186"
+                 "location" :   {
+                                    "latitude"  : "45.498726",
+                                    "longitude" : "-73.574186"
+                                }
                  }]
 }
