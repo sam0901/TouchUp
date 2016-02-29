@@ -10,6 +10,7 @@
 		0DE782D496D685770B809AA9 /* Pods_TouchUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F085DF9096598A147C50460 /* Pods_TouchUpTests.framework */; };
 		841EB2D61C7BFEB3001E572A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841EB2D51C7BFEB3001E572A /* LocationManager.swift */; };
 		8423AB911C83754E00CF60A5 /* TUAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423AB901C83754E00CF60A5 /* TUAppDelegate.swift */; };
+		843EA14C1C83F82C00887984 /* bump_build_number.sh in Resources */ = {isa = PBXBuildFile; fileRef = 843EA14B1C83F82C00887984 /* bump_build_number.sh */; };
 		8467982F1C6FDF7D00A759EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467982E1C6FDF7D00A759EF /* AppDelegate.swift */; };
 		846798341C6FDF7D00A759EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846798321C6FDF7D00A759EF /* Main.storyboard */; };
 		846798361C6FDF7D00A759EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846798351C6FDF7D00A759EF /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		841EB2D21C7BB903001E572A /* TouchUp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchUp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		841EB2D51C7BFEB3001E572A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		8423AB901C83754E00CF60A5 /* TUAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUAppDelegate.swift; sourceTree = "<group>"; };
+		843EA14B1C83F82C00887984 /* bump_build_number.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bump_build_number.sh; sourceTree = "<group>"; };
 		8467982B1C6FDF7D00A759EF /* TouchUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467982E1C6FDF7D00A759EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846798331C6FDF7D00A759EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +166,14 @@
 			name = Location;
 			sourceTree = "<group>";
 		};
+		843EA14A1C83F81600887984 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				843EA14B1C83F82C00887984 /* bump_build_number.sh */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
 		846798221C6FDF7D00A759EF = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +200,7 @@
 		8467982D1C6FDF7D00A759EF /* TouchUp */ = {
 			isa = PBXGroup;
 			children = (
+				843EA14A1C83F81600887984 /* Tools */,
 				841EB2D41C7BFE89001E572A /* Location */,
 				841EB2D21C7BB903001E572A /* TouchUp-Bridging-Header.h */,
 				84C940E71C7A4EF9005F0F73 /* ArtistSERP */,
@@ -287,7 +298,8 @@
 				846A7B5F1C71525300E4C7BF /* Embed PlugIns */,
 				3E06551656FB69CC950528D1 /* Embed Pods Frameworks */,
 				8355D9E151A9E610DB9B04E3 /* Copy Pods Resources */,
-				84741B541C8388380087EC95 /* ShellScript */,
+				84741B541C8388380087EC95 /* Crashlytics */,
+				843EA14D1C83F8AC00887984 /* Update Build Number */,
 			);
 			buildRules = (
 			);
@@ -390,6 +402,7 @@
 				84C940EB1C7A5367005F0F73 /* sampleArtistSERP.json in Resources */,
 				84C940E61C7A4031005F0F73 /* image1.jpg in Resources */,
 				846798391C6FDF7D00A759EF /* LaunchScreen.storyboard in Resources */,
+				843EA14C1C83F82C00887984 /* bump_build_number.sh in Resources */,
 				84C940E41C7A4031005F0F73 /* image3.jpg in Resources */,
 				846798361C6FDF7D00A759EF /* Assets.xcassets in Resources */,
 				846798341C6FDF7D00A759EF /* Main.storyboard in Resources */,
@@ -505,13 +518,28 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchUp/Pods-TouchUp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		84741B541C8388380087EC95 /* ShellScript */ = {
+		843EA14D1C83F8AC00887984 /* Update Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Update Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/TouchUp/bump_build_number.sh \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		84741B541C8388380087EC95 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,6 +738,7 @@
 			baseConfigurationReference = 6ADE1ED27F35B53E0F12DD44 /* Pods-TouchUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = TouchUp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -725,6 +754,7 @@
 			baseConfigurationReference = 286A333A26A60A36DAADAB34 /* Pods-TouchUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = TouchUp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
