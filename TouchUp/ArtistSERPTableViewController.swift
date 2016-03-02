@@ -16,6 +16,7 @@ class ArtistSERPTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.tableFooterView = UIView()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -45,6 +46,8 @@ class ArtistSERPTableViewController: UITableViewController {
         cell.artistSERPCellImageView.image = UIImage(named: "image2.jpg")
         cell.artistCellNameLabel.text = artists[indexPath.row].artistName
         cell.artistCellShortBioLabel.text = artists[indexPath.row].artistShortBio
+        cell.artistRatingLabel.text = artists[indexPath.row].rating
+        
         let artistLocation = CLLocation(latitude: (artists[indexPath.row].latitude! as NSString).doubleValue, longitude: (artists[indexPath.row].longitude! as NSString).doubleValue)
         if let location = locationBroker?.locationManager.location {
             let distanceInDouble = locationBroker!.getDistance(artistLocation, userLocation:  location)! / 1000

@@ -25,10 +25,11 @@ class ArtistSERPBroker {
                     let artistName = artist.1["artistName"].rawString()
                     let artistShortBio = artist.1["artistShortBio"].rawString()
                     let artistImageName = artist.1["artistImageName"].rawString()
+                    let rating = artist.1["rating"].rawString()
                     let latitude = artist.1["location"]["latitude"].rawString()
                     let longitude = artist.1["location"]["longitude"].rawString()
                     
-                    self.artists.append(ArtistSERPModel(artistId: artistId!, artistName: artistName!, artistShortBio: artistShortBio!, artistImageName: artistImageName!, latitude: latitude!, longitude: longitude!))
+                    self.artists.append(ArtistSERPModel(artistId: artistId!, artistName: artistName!, artistShortBio: artistShortBio!, artistImageName: artistImageName!, rating: rating!, latitude: latitude!, longitude: longitude!))
                 }
             }
         }
