@@ -64,16 +64,6 @@ extension HomeCategoryWidgetCollectionViewController : UICollectionViewDelegateF
             height = 200
         }
         
-//        switch DeviceType.Type {
-//        case .IS_IPAD :
-//            height = ScreenSize.SCREEN_HEIGHT - 600
-//        case DeviceType.IS_IPHONE_4_OR_LESS :
-//            height = ScreenSize.SCREEN_HEIGHT - 300
-//        case DeviceType.IS_IPHONE_5 :
-//            height = ScreenSize.SCREEN_HEIGHT - 380
-//        default :
-//            height = 200
-//        }
         
         return CGSizeMake(ScreenSize.SCREEN_WIDTH - 20, height!)
     }
