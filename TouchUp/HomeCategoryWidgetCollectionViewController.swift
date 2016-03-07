@@ -40,6 +40,9 @@ extension HomeCategoryWidgetCollectionViewController : UICollectionViewDelegateF
         cell.categoryCellLabel.textAlignment = NSTextAlignment.Justified
         cell.categoryImageView.image = UIImage(named: widgets[indexPath.row].imageName!)
         cell.categoryBlurView.alpha = 0.10
+        cell.layer.borderColor = UIColor.grayColor().CGColor
+        cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 8
         return cell
     }
     

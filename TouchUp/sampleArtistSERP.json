@@ -1,7 +1,7 @@
 {
     "artists" : [{
                  "artistId" : "0",
-                 "artistName"         : "Name1",
+                 "artistName"         : "Mama",
                  "artistImageName"    : "image3.png",
                  "artistShortBio"     : "ExampleShortBio",
                  "rating"             : "4.5",

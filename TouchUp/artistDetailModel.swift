@@ -15,14 +15,14 @@ class ArtistDetailModel {
     let artistImage : String?
     let artistShortBio : String?
     let rating: String?
-    let images : Array<String?>
+    let images : JSON
     let artistLongBio : String?
-    let qualifications : JSON?
+    let qualifications : JSON
     let latitude : String?
     let longitude : String?
     
     
-    init(artistId: String?, artistName : String?, artistImage : String?, artistShortBio : String?, rating : String?, images : Array<String?>, artistLongBio : String?, qualifications : JSON?, latitude : String?, longitude : String?) {
+    init(artistId: String?, artistName : String?, artistImage : String?, artistShortBio : String?, rating : String?, images : JSON, artistLongBio : String?, qualifications : JSON, latitude : String?, longitude : String?) {
         self.artistId = artistId
         self.artistName = artistName
         self.artistImage = artistImage

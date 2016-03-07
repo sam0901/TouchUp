@@ -1,12 +1,12 @@
 {
     "artistId"       : "0",
-    "artistName"     : "Name1",
-    "artistImage"    : "image3.jpg",
+    "artistName"     : "Mama",
+    "artistImage"    : "image1.jpg",
     "artistShortBio" : "ExampleShortBio",
     "rating"         : "4.5",
-    "images"         : ["image1.jpg", "image2.jpg", "image3.jpg"],
+    "images"         : ["image1.jpg", "image2.jpg", "image3.jpg", "image3.jpg", "image3.jpg", "image3.jpg", "image3.jpg", "image3.jpg"],
     "artistLongBio"  : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "Qualifications" : ,
+    "Qualifications" : ["btech","bcom","phd"],
     "location" :   {
         "latitude"   : "45.498726",
         "longitude"  : "-73.574186"
